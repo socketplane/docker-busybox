@@ -1,0 +1,18 @@
+[patch] fix openssl library version
+---
+ openssl.ld | 4 ++++
+ 1 file changed, 4 insertions(+)
+ create mode 100644 openssl.ld
+
+diff --git a/openssl.ld b/openssl.ld
+new file mode 100644
+index 0000000..6387e57
+--- /dev/null
++++ b/openssl.ld
+@@ -0,0 +1,4 @@
++OPENSSL_1.0.0 {
++	global:
++	*;
++};
+-- 
+
